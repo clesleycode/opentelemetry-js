@@ -44,7 +44,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
         run: |
@@ -90,7 +89,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
         run: |
@@ -127,7 +125,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
         run: |
@@ -164,7 +161,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js'
 
       - name: Build 🔧
         run: |
@@ -196,7 +192,6 @@ jobs:
         run: |
           npm install --ignore-scripts
           npm install @types/mocha@^7 mocha@^7 ts-loader@^8 ts-mocha@^8
-          node ../scripts/version-update.js
           npx tsc --build tsconfig.json tsconfig.esm.json
 
       - name: Test

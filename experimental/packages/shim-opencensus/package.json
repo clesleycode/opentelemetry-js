@@ -5,7 +5,7 @@
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "exports": {
-    ".": "./build/src/index.js",
+    ".": ".//index.js",
     "./register": "./build/src/register.js"
   },
   "repository": "open-telemetry/opentelemetry-js",
@@ -20,7 +20,7 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "version": "node ../../../scripts/version-update.js",
     "watch": "tsc --build --watch",
-    "precompile": "cross-var lerna run version --scope $npm_package_name --include-dependencies",
+        "precompile": "npm install && eslint src && tsc --noEmit",
     "prewatch": "npm run precompile",
     "peer-api-check": "node ../../../scripts/peer-api-check.js"
   },

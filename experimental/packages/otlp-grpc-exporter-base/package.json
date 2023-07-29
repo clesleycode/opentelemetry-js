@@ -19,7 +19,7 @@
     "test": "nyc ts-mocha -p tsconfig.json 'test/**/*.test.ts'",
     "version": "node ../../../scripts/version-update.js",
     "watch": "npm run protos && tsc -w",
-    "precompile": "cross-var lerna run version --scope $npm_package_name --include-dependencies",
+        "precompile": "npm install && eslint src && tsc --noEmit",
     "prewatch": "npm run precompile"
   },
   "keywords": [

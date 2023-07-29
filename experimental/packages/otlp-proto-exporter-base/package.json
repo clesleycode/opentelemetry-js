@@ -24,7 +24,7 @@
     "submodule": "git submodule sync --recursive && git submodule update --init --recursive",
     "version": "node ../../../scripts/version-update.js",
     "watch": "npm run protos && tsc -w tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
-    "precompile": "cross-var lerna run version --scope $npm_package_name --include-dependencies",
+        "precompile": "npm install && eslint src && tsc --noEmit",
     "prewatch": "npm run precompile"
   },
   "keywords": [

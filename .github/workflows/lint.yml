@@ -51,7 +51,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js'
 
       - name: Lint
         run: |
