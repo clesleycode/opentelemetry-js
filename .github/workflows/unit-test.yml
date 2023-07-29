@@ -44,7 +44,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
         run: |
@@ -90,7 +89,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
         run: |
@@ -127,7 +125,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js' --ignore @opentelemetry/selenium-tests
 
       - name: Build 🔧
         run: |
@@ -164,7 +161,6 @@ jobs:
       - name: Bootstrap
         run: |
           npm install --ignore-scripts
-          npx lerna bootstrap --no-ci --hoist --nohoist='zone.js'
 
       - name: Build 🔧
         run: |
