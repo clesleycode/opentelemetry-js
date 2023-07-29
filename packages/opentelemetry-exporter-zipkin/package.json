@@ -26,7 +26,7 @@
     "test:browser": "karma start --single-run",
     "version": "node ../../scripts/version-update.js",
     "watch": "tsc --build --watch tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
-        "precompile": "npm run submodule",
+        "precompile": "npm install && eslint src && tsc --noEmit",
     "prewatch": "npm run precompile",
     "peer-api-check": "node ../../scripts/peer-api-check.js"
   },

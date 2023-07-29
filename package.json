@@ -17,12 +17,12 @@
     "examples/esm-http-ts"
   ],
   "scripts": {
-    "precompile": "npm run submodule",
+    "precompile": "npm install && eslint src && tsc --noEmit",
     "compile": "npm run protos:generate && tsc --build tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
     "prewatch": "npm run precompile",
     "watch": "tsc --build --watch tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
     "clean": "tsc --build --clean tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
-    "postinstall": "npm run update-ts-configs && npm install",
+    "postinstall": "npm install",
     "submodule": "git submodule sync --recursive && git submodule update --init --recursive",
     "version:update": "lerna run version:update",
     "test": "npm run test:all",

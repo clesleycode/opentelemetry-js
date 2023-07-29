@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.25.0",
   "description": "Example of using @opentelemetry/sdk-trace-base in Node.js",
-  "main": "index.js",
+  "main": "build/src/index.js",
   "scripts": {
     "start": "node ./index.js"
   },

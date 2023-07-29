@@ -16,7 +16,7 @@
     "codecov:browser": "nyc report --reporter=json && codecov -f coverage/*.json -p ../",
     "codecov:webworker": "nyc report --reporter=json && codecov -f coverage/*.json -p ../",
     "codecov": "nyc report --reporter=json && codecov -f coverage/*.json -p ../",
-        "precompile": "npm run submodule",
+        "precompile": "npm install && eslint src && tsc --noEmit",
     "compile": "tsc --build tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
     "docs": "typedoc",
     "docs:deploy": "gh-pages --dist docs/out",

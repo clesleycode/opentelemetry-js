@@ -43,9 +43,6 @@ jobs:
           npm ci --ignore-scripts
           npx lerna bootstrap --hoist --scope=propagation-validation-server --include-dependencies
 
-      - name: Generate version.ts files
-        run: lerna run version
-
       - name: Build 🔧
         run: npm run compile
         working-directory: ./integration-tests/propagation-validation-server

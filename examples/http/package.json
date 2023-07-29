@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.41.1",
   "description": "Example of HTTP integration with OpenTelemetry",
-  "main": "index.js",
+  "main": "build/src/index.js",
   "scripts": {
     "zipkin:server": "cross-env EXPORTER=zipkin node ./server.js",
     "zipkin:client": "cross-env EXPORTER=zipkin node ./client.js",
