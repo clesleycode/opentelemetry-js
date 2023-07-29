@@ -29,7 +29,7 @@
     "codecov:webworker": "nyc report --reporter=json && codecov -f coverage/*.json -p ../../",
     "version": "node ../../scripts/version-update.js",
     "watch": "tsc --build --watch tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
-    "precompile": "cross-var lerna run version --scope $npm_package_name --include-dependencies",
+        "precompile": "npm run submodule",
     "prewatch": "npm run precompile",
     "peer-api-check": "node ../../scripts/peer-api-check.js"
   },

@@ -16,7 +16,7 @@
     "codecov:browser": "nyc report --reporter=json && codecov -f coverage/*.json -p ../",
     "codecov:webworker": "nyc report --reporter=json && codecov -f coverage/*.json -p ../",
     "codecov": "nyc report --reporter=json && codecov -f coverage/*.json -p ../",
-    "precompile": "cross-var lerna run version --scope $npm_package_name --include-dependencies",
+        "precompile": "npm run submodule",
     "compile": "tsc --build tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
     "docs": "typedoc",
     "docs:deploy": "gh-pages --dist docs/out",
