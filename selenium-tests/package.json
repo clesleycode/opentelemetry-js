@@ -3,7 +3,7 @@
   "version": "1.15.1",
   "private": true,
   "description": "OpenTelemetry Selenium Tests",
-  "main": "build/src/index.js",
+  "main": "index.js",
   "repository": "open-telemetry/opentelemetry-js",
   "scripts": {
     "all:bs": "nightwatch ./tests  --parallel --env browserstack.chrome,browserstack.safari,browserstack.firefox",

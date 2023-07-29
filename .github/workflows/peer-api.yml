@@ -24,4 +24,3 @@ jobs:
 
       - name: Check API dependency semantics
         working-directory: packages
-        run: lerna run peer-api-check

@@ -3,7 +3,7 @@
   "version": "0.41.1",
   "private": true,
   "description": "Example of using @opentelemetry/sdk-metrics and @opentelemetry/exporter-prometheus",
-  "main": "build/src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },

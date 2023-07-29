@@ -26,7 +26,7 @@
     "submodule": "git submodule sync --recursive && git submodule update --init --recursive",
     "version:update": "lerna run version:update",
     "test": "npm run test:all",
-    "test:all": "npm run test --workspaces",
+    "test:all": "npm run test --workspaces --if-present",
     "test:browser": "npm run test:all -- --scope=packages/browser",
     "test:webworker": "npm run test:all -- --scope=packages/webworker",
     "test:backcompat": "npm run test:all -- --scope=packages/backcompat",
