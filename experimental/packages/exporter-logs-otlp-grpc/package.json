@@ -15,7 +15,6 @@
     "test": "nyc ts-mocha -p tsconfig.json 'test/**/*.test.ts'",
     "version": "node ../../../scripts/version-update.js",
     "watch": "tsc --watch --build",
-    "precompile": "cross-var lerna run version --scope $npm_package_name --include-dependencies",
     "prewatch": "npm run precompile",
     "peer-api-check": "node ../../../scripts/peer-api-check.js",
     "codecov": "nyc report --reporter=json && codecov -f coverage/*.json -p ../../../"
@@ -49,7 +48,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.10",
-    "@grpc/proto-loader": "^0.7.3",
+    "@grpc/proto-loader": "0.7.3",
     "@opentelemetry/api": "1.4.1",
     "@opentelemetry/api-logs": "0.41.2",
     "@opentelemetry/otlp-exporter-base": "0.41.2",
@@ -60,7 +59,6 @@
     "codecov": "3.8.3",
     "cpx": "1.5.0",
     "cross-var": "1.1.0",
-    "lerna": "7.1.4",
     "mocha": "10.2.0",
     "nyc": "15.1.0",
     "sinon": "15.1.2",
@@ -69,7 +67,7 @@
     "typescript": "4.4.4"
   },
   "peerDependencies": {
-    "@opentelemetry/api": "^1.0.0"
+    "@opentelemetry/api": "1.0.0"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.7.1",
